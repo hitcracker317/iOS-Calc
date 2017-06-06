@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var priceText: UITextField!
-    @IBOutlet weak var changeButton: UIButton!
+    @IBOutlet weak var changeInputButton: UIButton!
     
     var priceValue = 0
     var percentValue = 0
@@ -73,21 +73,33 @@ class ViewController: UIViewController {
         priceText.text = "\(priceInt)"
     }
     
-    @IBAction func changePercent(_ sender: Any) {
-        
+
+    @IBAction func changeInput(_ sender: Any) {
+        //入力内容を変更する
         if isInputPrice {
+            //割引入力に変更
             isInputPrice = false
             titleText.text = "割引%を入力してください"
-            priceValue = Int(priceText.text!)!
-            priceText.text = "0"
-        } else {
-            let percentValue:Float = Float(priceText.text!)! / 100.0
             
-            print("計算される金額：\(priceValue)")
-            print("割引率：\(percentValue)")
+            priceValue = Int(priceText.text!)!
+            priceText.text = String(percentValue)
+        } else {
+            //金額入力に変更
+            isInputPrice = true
+            titleText.text = "金額を入力してください"
+            
+            percentValue = Int(priceText.text!)!
+            priceText.text = String(priceValue)
+            
         }
-
+        
+        print("計算される金額：\(priceValue)")
+        print("割引率：\(percentValue)")
+        
     }
-
+    @IBAction func appearResult(_ sender: Any) {
+        //結果画面に遷移
+        //priceValueとpercentValueを受け渡す
+    }
 }
 

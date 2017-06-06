@@ -79,21 +79,6 @@
                                     <action selector="tapNumber6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Un-aw-aOj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xqe-6J-Zlg">
-                                <rect key="frame" x="85" y="430" width="150" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.5588471842624918" blue="0.4701512106862572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.98953555606042143" green="0.97213509105266538" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="決定"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="changePercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WRL-JW-mYo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HlW-ea-KXT">
                                 <rect key="frame" x="37" y="355" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,11 +127,36 @@
                                     <action selector="tapNumber9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yil-b2-Xec"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xqe-6J-Zlg">
+                                <rect key="frame" x="85" y="489" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5588471842624918" blue="0.4701512106862572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.98953555606042143" green="0.97213509105266538" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="決定"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="appearResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cf-pt-cAM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sFW-XN-eqz">
+                                <rect key="frame" x="78" y="422" width="165" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.70139832427536231" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="入力内容切り替え"/>
+                                <connections>
+                                    <action selector="changeInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Os0-CL-jje"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="changeButton" destination="xqe-6J-Zlg" id="BKz-61-Au0"/>
+                        <outlet property="changeInputButton" destination="sFW-XN-eqz" id="9PU-hv-uE4"/>
                         <outlet property="priceText" destination="8MQ-gg-cJ8" id="fk2-6P-wIz"/>
                         <outlet property="titleText" destination="Xkg-8T-nO3" id="mQC-tx-xe2"/>
                     </connections>
@@ -154,6 +164,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zH0-2v-Xnx">
+            <objects>
+                <viewController id="G80-dQ-oAM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TeU-JN-RTO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9P-LG-jF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="154"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
