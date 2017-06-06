@@ -1,5 +1,5 @@
 //
-//  PercentViewController.swift
+//  ResultViewController.swift
 //  CalcApp
 //
 //  Created by MaedaAkira on 2017/06/06.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PercentViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +31,8 @@ class PercentViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func backTop(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
 }

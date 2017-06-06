@@ -14,7 +14,7 @@
 		F37E36B21EE63FBE0021DA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37E36B01EE63FBE0021DA52 /* LaunchScreen.storyboard */; };
 		F37E36BD1EE63FBE0021DA52 /* CalcAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E36BC1EE63FBE0021DA52 /* CalcAppTests.swift */; };
 		F37E36C81EE63FBF0021DA52 /* CalcAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E36C71EE63FBF0021DA52 /* CalcAppUITests.swift */; };
-		F37E36D61EE65C0F0021DA52 /* PercentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E36D51EE65C0F0021DA52 /* PercentViewController.swift */; };
+		F37E36D61EE65C0F0021DA52 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E36D51EE65C0F0021DA52 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		F37E36C31EE63FBF0021DA52 /* CalcAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37E36C71EE63FBF0021DA52 /* CalcAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcAppUITests.swift; sourceTree = "<group>"; };
 		F37E36C91EE63FBF0021DA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F37E36D51EE65C0F0021DA52 /* PercentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentViewController.swift; sourceTree = "<group>"; };
+		F37E36D51EE65C0F0021DA52 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				F37E36A71EE63FBE0021DA52 /* AppDelegate.swift */,
 				F37E36A91EE63FBE0021DA52 /* ViewController.swift */,
-				F37E36D51EE65C0F0021DA52 /* PercentViewController.swift */,
+				F37E36D51EE65C0F0021DA52 /* ResultViewController.swift */,
 				F37E36AB1EE63FBE0021DA52 /* Main.storyboard */,
 				F37E36AE1EE63FBE0021DA52 /* Assets.xcassets */,
 				F37E36B01EE63FBE0021DA52 /* LaunchScreen.storyboard */,
@@ -264,7 +264,7 @@
 			files = (
 				F37E36AA1EE63FBE0021DA52 /* ViewController.swift in Sources */,
 				F37E36A81EE63FBE0021DA52 /* AppDelegate.swift in Sources */,
-				F37E36D61EE65C0F0021DA52 /* PercentViewController.swift in Sources */,
+				F37E36D61EE65C0F0021DA52 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +511,7 @@
 				F37E36CE1EE63FBF0021DA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F37E36CF1EE63FBF0021DA52 /* Build configuration list for PBXNativeTarget "CalcAppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +520,7 @@
 				F37E36D11EE63FBF0021DA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F37E36D21EE63FBF0021DA52 /* Build configuration list for PBXNativeTarget "CalcAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +529,7 @@
 				F37E36D41EE63FBF0021DA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
