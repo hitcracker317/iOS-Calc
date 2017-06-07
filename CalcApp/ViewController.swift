@@ -77,6 +77,14 @@ class ViewController: UIViewController {
         let price = priceText.text! + value
         let priceInt:Int = Int(price)!
         priceText.text = "\(priceInt)"
+        
+        if isInputPrice {
+            priceValue = Int(priceText.text!)!
+            print("計算される金額：\(priceValue)")
+        } else {
+            percentValue = Int(priceText.text!)!
+            print("割引率：\(percentValue)")
+        }
     }
     
 
@@ -87,25 +95,24 @@ class ViewController: UIViewController {
             isInputPrice = false
             titleText.text = "割引%を入力してください"
             
-            priceValue = Int(priceText.text!)!
             priceText.text = String(percentValue)
         } else {
             //金額入力に変更
             isInputPrice = true
             titleText.text = "金額を入力してください"
             
-            percentValue = Int(priceText.text!)!
             priceText.text = String(priceValue)
-            
         }
-        
-        print("計算される金額：\(priceValue)")
-        print("割引率：\(percentValue)")
-        
     }
-    @IBAction func appearResult(_ sender: Any) {
-        //結果画面に遷移
-        //priceValueとpercentValueを受け渡す
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //画面遷移するときに呼ばれるメソッド
+        let resultViewController = segue.destination as! ResultViewController
+        
+        resultViewController.priceValue = priceValue
+        resultViewController.percent = percentValue
+        
     }
 }
 
